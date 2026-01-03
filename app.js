@@ -1,5 +1,3 @@
-// student style JS (simple and clear)
-
 let form = document.getElementById("searchForm");
 let input = document.getElementById("searchInput");
 let message = document.getElementById("message");
