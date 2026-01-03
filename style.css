@@ -1,0 +1,196 @@
+/* simple student styling */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f3f5ff;
+  color: #111;
+}
+
+header {
+  padding: 20px;
+  background: #1f2a44;
+  color: white;
+}
+
+header p {
+  margin-top: 6px;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 16px;
+}
+
+@media (max-width: 850px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#message {
+  margin-top: 12px;
+  min-height: 20px;
+}
+
+.error {
+  color: #c81e1e;
+  font-weight: bold;
+}
+
+.wordTitle {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.block {
+  border: 1px solid #e5e7eb;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+.synBtn {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  color: #111;
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin: 4px 6px 0 0;
+}
+
+.synBtn:hover {
+  border-color: #2563eb;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#savedList {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+
+.savedItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.savedItem.savedHighlight {
+  border-color: #2563eb;
+  background: #eef2ff;
+}
+
+.smallBtn {
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: #0f172a;
+}
+
+.danger {
+  background: #e11d48;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  color: #444;
+}
+
+/* dark theme (dynamic CSS change) */
+body.dark {
+  background: #0b1020;
+  color: #e5e7eb;
+}
+
+body.dark .card {
+  background: #121a33;
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark input {
+  background: #0b1020;
+  color: #e5e7eb;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark .badge {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #e5e7eb;
+}
+
+body.dark .block {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.dark .synBtn {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #e5e7eb;
+}
+
+body.dark .savedItem {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark .savedItem.savedHighlight {
+  background: rgba(37, 99, 235, 0.2);
+  border-color: rgba(37, 99, 235, 0.8);
+}
